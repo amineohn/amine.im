@@ -1,11 +1,7 @@
-import { useRouter } from 'next/router';
-
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
 const Index = () => {
-  const router = useRouter();
-
   return (
     <Main
       meta={
@@ -15,9 +11,7 @@ const Index = () => {
         />
       }
     >
-      <h1 className="text-2xl font-bold">
-        sup, sup
-      </h1>
+      <h1 className="text-2xl font-bold">sup, sup test vercel deployment</h1>
     </Main>
   );
 };

@@ -56,7 +56,9 @@ const Main = (props: IMainProps) => (
         <span role="img" aria-label="Love">
           ♥ Vercel
         </span>{' '}
-        <a href="https://github.com/ixartz/Next-js-Boilerplate">thanks to ixartz</a>
+        <a href="https://github.com/ixartz/Next-js-Boilerplate">
+          thanks to ixartz
+        </a>
       </div>
     </div>
   </div>
