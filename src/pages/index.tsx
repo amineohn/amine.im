@@ -11,7 +11,7 @@ const Index = () => {
         />
       }
     >
-      <h1 className="text-2xl font-bold">sup, sup test vercel deployment</h1>
+      <h1 className="font-bold text-1xl">sup, sup test vercel deployment</h1>
     </Main>
   );
 };

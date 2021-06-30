@@ -15,11 +15,10 @@
     "deploy": "vercel && vercel --prod"
   },
   "dependencies": {
-    "@glyphs/react-brands": "^0.0.5",
-    "@glyphs/react-core": "^0.0.5",
-    "@glyphs/react-flags": "^0.0.5",
+    "framer-motion": "^4.1.17",
     "next": "^11.0.1",
     "next-seo": "^4.26.0",
+    "next-themes": "^0.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "styled-jsx-plugin-postcss": "^4.0.1"
