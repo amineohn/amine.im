@@ -40,7 +40,7 @@ const Main = (props: IMainProps) => (
             <li className="mr-6">
               <a
                 className="text-gray-700 border-none hover:text-gray-900"
-                href="https://github.com/ixartz/Next-js-Boilerplate"
+                href="https://github.com/imveny/amine.im"
               >
                 GitHub
               </a>
@@ -53,14 +53,10 @@ const Main = (props: IMainProps) => (
 
       <div className="py-8 text-sm text-center border-t border-gray-300">
         © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
-        <span role="img" aria-label="Love">
-          ♥ Vercel
-        </span>{' '}
-        <a href="https://github.com/ixartz/Next-js-Boilerplate">
-          thanks to ixartz
-        </a>
+        Vercel{' '}
       </div>
     </div>
+    {/* Shot out to ixartz for his Boilerplate link: https://github.com/ixartz/Next-js-Boilerplate */}
   </div>
 );
 

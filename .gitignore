@@ -36,3 +36,6 @@ local
 
 # vscode
 .vscode
+
+# yarn
+yarn.lock

@@ -7,7 +7,7 @@ const Index = () => {
       meta={
         <Meta
           title="Amine"
-          description="My Personal website made with NextJS & TailWind."
+          description="My Personal website made with NextJS & Tailwind."
         />
       }
     >
