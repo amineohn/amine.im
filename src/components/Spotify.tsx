@@ -75,6 +75,7 @@ const Spotify = () => {
                   <FadeIn>
                     <a
                       href={`https://open.spotify.com/track/${doing?.spotify.track_id}`}
+                      target="_blank"
                     >
                       {doing.spotify.song.replace(/\&/g, 'and')} by{' '}
                       {doing.spotify.artist
