@@ -14,11 +14,13 @@ const Index = () => {
       <h1 className="pb-2 text-5xl font-bold text-black dark:text-white">
         Hello, I'm Amine Ouhani
       </h1>
-      <p className="font-medium text-gray-700 dark:text-white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui
-        quidem non earum eveniet magni voluptates, odio omnis itaque quo dolor
-        quibusdam iste quas. Molestias minus officiis et dolores numquam.
-      </p>
+      <div className="mb-8">
+        <p className="mb-4 text-gray-600 dark:text-gray-50">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui
+          quidem non earum eveniet magni voluptates, odio omnis itaque quo dolor
+          quibusdam iste quas. Molestias minus officiis et dolores numquam.
+        </p>
+      </div>
     </Main>
   );
 };
