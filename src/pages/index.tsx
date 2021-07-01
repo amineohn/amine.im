@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 

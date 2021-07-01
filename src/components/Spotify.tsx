@@ -1,10 +1,3 @@
-/* eslint-disable consistent-return */
-/* eslint-disable unused-imports/no-unused-vars */
-/* eslint-disable no-useless-escape */
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable func-names */
 import { useEffect, useState } from 'react';
 
 import FadeIn from 'react-fade-in';
