@@ -23,6 +23,22 @@ const About = () => (
           </div>
           <p className="mt-2 text-xl font-medium text-gray-900 text-normal spacing-sm dark:text-white">
             title app
+            <a href="http://" target="_blank">
+              <svg
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
           </p>
           <span className="text-gray-600 text-md">resume project sir</span>
         </div>
@@ -35,6 +51,22 @@ const About = () => (
           </div>
           <p className="mt-2 text-xl font-medium text-gray-900 text-normal spacing-sm dark:text-white">
             title app
+            <a href="http://" target="_blank">
+              <svg
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
           </p>
           <span className="text-gray-600 text-md">resume project sir</span>
         </div>
@@ -47,6 +79,22 @@ const About = () => (
           </div>
           <p className="mt-2 text-xl font-medium text-gray-900 text-normal spacing-sm dark:text-white">
             title app
+            <a href="http://" target="_blank">
+              <svg
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
           </p>
           <span className="text-gray-600 text-md">resume project sir</span>
         </div>
@@ -59,6 +107,22 @@ const About = () => (
           </div>
           <p className="mt-2 text-xl font-medium text-gray-900 text-normal spacing-sm dark:text-white">
             title app
+            <a href="http://" target="_blank">
+              <svg
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                ></path>
+              </svg>
+            </a>
           </p>
           <span className="text-gray-600 text-md">resume project sir</span>
         </div>
