@@ -9,7 +9,7 @@ const About = () => (
       </h1>
       <div className="mb-8">
         <p className="mb-4 text-gray-600 dark:text-gray-400">
-          All my first projects was here, and is a pleasure to share this with
+          All my first projects were here, it's a pleasure to share them with
           you. &nbsp;
         </p>
       </div>
