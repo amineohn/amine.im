@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-white dark:bg-black;
+  @apply antialiased text-gray-700 transition-colors bg-white dark:bg-black;
 }

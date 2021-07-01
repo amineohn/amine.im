@@ -5,7 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withBundleAnalyzer({
   poweredByHeader: false,
-  trailingSlash: true,
+  trailingSlash: false,
   basePath: '',
   reactStrictMode: true,
 });
