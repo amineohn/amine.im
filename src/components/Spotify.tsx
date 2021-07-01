@@ -30,10 +30,7 @@ type SocketEvent = {
 };
 
 const discordId = '762055588762877973';
-const Spotify = (
-  { setActive, ...props }: { setActive: (active: boolean) => void } & any,
-  ref: any
-) => {
+const Spotify = () => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [doing, setDoing] = useState<Presence>();
   const send = (op: Operation, d?: unknown): void => {
