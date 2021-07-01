@@ -1,5 +1,5 @@
-import { Meta } from '../layout/Meta';
-import { Main } from '../templates/Main';
+import { Meta } from "../layout/Meta";
+import { Main } from "../templates/Main";
 
 const Index = () => {
   return (
@@ -11,7 +11,7 @@ const Index = () => {
         />
       }
     >
-      <h1 className="text-5xl font-bold text-black dark:text-white">
+      <h1 className="pb-2 text-5xl font-bold text-black dark:text-white">
         Hello, I'm Amine Ouhani
       </h1>
       <p className="font-medium text-gray-700 dark:text-white">

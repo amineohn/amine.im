@@ -14,7 +14,7 @@ const About = () => (
         </p>
       </div>
       <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
+        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-900 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
             <img
               className="rounded-md"
@@ -44,7 +44,7 @@ const About = () => (
             resume project sir
           </span>
         </div>
-        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
+        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-900 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
             <img
               className="rounded-md"
@@ -74,7 +74,7 @@ const About = () => (
             resume project sir
           </span>
         </div>
-        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
+        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-900 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
             <img
               className="rounded-md"
@@ -104,7 +104,7 @@ const About = () => (
             resume project sir
           </span>
         </div>
-        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
+        <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-900 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
             <img
               className="rounded-md"
