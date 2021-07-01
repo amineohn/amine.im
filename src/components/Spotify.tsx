@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import FadeIn from 'react-fade-in';
+import FadeIn from "react-fade-in";
 
-import { Presence } from '../types/Lanyard';
+import { Presence } from "../types/Lanyard";
 
 enum Operation {
   Event,
@@ -12,8 +12,8 @@ enum Operation {
 }
 
 enum EventType {
-  INIT_STATE = 'INIT_STATE',
-  PRESENCE_UPDATE = 'PRESENCE_UPDATE',
+  INIT_STATE = "INIT_STATE",
+  PRESENCE_UPDATE = "PRESENCE_UPDATE",
 }
 
 type SocketEvent = {
@@ -22,7 +22,7 @@ type SocketEvent = {
   d: Presence | unknown;
 };
 
-const discordId = '762055588762877973';
+const discordId = "762055588762877973";
 const Spotify = () => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [doing, setDoing] = useState<Presence>();
@@ -54,7 +54,7 @@ const Spotify = () => {
   }, [socket]);
 
   useEffect(() => {
-    if (!socket) setSocket(new WebSocket('wss://api.lanyard.rest/socket'));
+    if (!socket) setSocket(new WebSocket("wss://api.lanyard.rest/socket"));
   }, [socket]);
 
   if (!doing || !doing?.discord_status) return null;
@@ -77,20 +77,20 @@ const Spotify = () => {
                       href={`https://open.spotify.com/track/${doing?.spotify.track_id}`}
                       target="_blank"
                     >
-                      {doing.spotify.song.replace(/\&/g, 'and')} by{' '}
+                      {doing.spotify.song.replace(/\&/g, "and")} by{" "}
                       {doing.spotify.artist
-                        .replace(/\;/g, ',')
-                        .replace(/\&/g, 'and')}
+                        .replace(/\;/g, ",")
+                        .replace(/\&/g, "and")}
                     </a>
                   </FadeIn>
                 </>
               ) : null}
             </p>
             <span className="hidden mx-2 text-gray-500 dark:text-gray-300 sm:block">
-              {' '}
-              –{' '}
+              {" "}
+              –{" "}
             </span>
-            <p className="text-gray-500 truncate dark:text-gray-300 max-w-max">
+            <p className="text-gray-500 truncate dark:text-gray-50 max-w-max">
               Spotify
               <span className="absolute inline w-2 h-2 mt-2 ml-1 space-x-1 bg-red-500 rounded-full animate-pulse" />
             </p>
@@ -109,10 +109,10 @@ const Spotify = () => {
               <FadeIn>Not Playing</FadeIn>
             </p>
             <span className="hidden mx-2 text-gray-500 dark:text-gray-300 sm:block">
-              {' '}
-              –{' '}
+              {" "}
+              –{" "}
             </span>
-            <p className="text-gray-500 truncate dark:text-gray-300 max-w-max">
+            <p className="text-gray-500 truncate dark:text-gray-50 max-w-max">
               Spotify
             </p>
           </div>

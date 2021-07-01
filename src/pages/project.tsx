@@ -40,7 +40,9 @@ const About = () => (
               </svg>
             </a>
           </p>
-          <span className="text-gray-600 text-md">resume project sir</span>
+          <span className="text-gray-600 text-md dark:text-gray-50">
+            resume project sir
+          </span>
         </div>
         <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
@@ -68,7 +70,9 @@ const About = () => (
               </svg>
             </a>
           </p>
-          <span className="text-gray-600 text-md">resume project sir</span>
+          <span className="text-gray-600 text-md dark:text-gray-50">
+            resume project sir
+          </span>
         </div>
         <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
@@ -96,7 +100,9 @@ const About = () => (
               </svg>
             </a>
           </p>
-          <span className="text-gray-600 text-md">resume project sir</span>
+          <span className="text-gray-600 text-md dark:text-gray-50">
+            resume project sir
+          </span>
         </div>
         <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
           <div className="flex items-center text-gray-900 dark:text-gray-100">
@@ -124,7 +130,9 @@ const About = () => (
               </svg>
             </a>
           </p>
-          <span className="text-gray-600 text-md">resume project sir</span>
+          <span className="text-gray-600 text-md dark:text-gray-50">
+            resume project sir
+          </span>
         </div>
       </div>
     </div>
