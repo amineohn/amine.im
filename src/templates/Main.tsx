@@ -5,7 +5,6 @@ import FadeIn from "react-fade-in";
 
 import Spotify from "../components/Spotify";
 import { ThemeSwitcher } from "../components/ThemeSwitcher";
-
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -21,19 +20,19 @@ const Main = (props: IMainProps) => {
         <div>
           <a
             onClick={() => router.push("/")}
-            className="p-1 font-medium text-gray-900 cursor-pointer sm:p-4 dark:text-gray-100"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
           >
             Home
           </a>
           <a
             onClick={() => router.push("/about")}
-            className="p-1 font-medium text-gray-900 cursor-pointer sm:p-4 dark:text-gray-100"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
           >
             About
           </a>
           <a
             onClick={() => router.push("/project")}
-            className="p-1 font-medium text-gray-900 cursor-pointer sm:p-4 dark:text-gray-100"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
           >
             Projects
           </a>
