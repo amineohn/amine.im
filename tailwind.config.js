@@ -31,6 +31,7 @@ module.exports = {
         trueGray: colors.trueGray,
         coolGray: colors.coolGray,
         blueGray: colors.blueGray,
+        js: "#EFD81D",
       },
     },
   },
