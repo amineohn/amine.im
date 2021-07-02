@@ -3,7 +3,7 @@ import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
 
 const Index = () => {
-  const [appState, setAppState] = useState({
+  const [Repos, setRepo] = useState({
     repos: null,
   });
 
@@ -11,10 +11,10 @@ const Index = () => {
     fetch(`https://api.github.com/users/imveny/repos`)
       .then((res) => res.json())
       .then((repos) => {
-        setAppState({ repos: repos });
+        setRepo({ repos: repos });
       });
-  }, [setAppState]);
-  const { repos }: any = appState;
+  }, [setRepo]);
+  const { repos }: any = Repos;
   if (!repos || repos.length === 0)
     return (
       <div className="fixed top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-white opacity-75 dark:bg-black">
