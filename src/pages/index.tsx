@@ -8,8 +8,7 @@ const Index = () => {
   });
 
   useEffect(() => {
-    const apiUrl = `https://api.github.com/users/imveny/repos`;
-    fetch(apiUrl)
+    fetch(`https://api.github.com/users/imveny/repos`)
       .then((res) => res.json())
       .then((repos) => {
         setAppState({ repos: repos });
@@ -19,7 +18,7 @@ const Index = () => {
   if (!repos || repos.length === 0)
     return (
       <div className="fixed top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center w-full h-screen overflow-hidden bg-white opacity-75 dark:bg-black">
-        <div className="w-12 h-12 mb-4 ease-linear border-4 border-t-4 border-gray-200 rounded-full loader"></div>
+        <div className="w-12 h-12 mb-4 ease-linear border-4 border-t-4 border-gray-100 rounded-full loader"></div>
       </div>
     );
   return (
@@ -46,7 +45,7 @@ const Index = () => {
           Repository Github
         </h1>
         <div className="mb-8">
-          <p className="mb-4 text-gray-600 dark:text-gray-400">
+          <p className="mb-4 text-gray-600 dark:text-white">
             You can find all my repository from git here.&nbsp;
           </p>
         </div>
@@ -56,7 +55,6 @@ const Index = () => {
               return (
                 <div className="w-full p-4 overflow-hidden border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
                   <a
-                    aria-label="Unsplash Downloads"
                     target="_blank"
                     rel="noopener noreferrer"
                     href={repo.svn_url}
