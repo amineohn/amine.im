@@ -20,19 +20,19 @@ const Main = (props: IMainProps) => {
         <div>
           <a
             onClick={() => router.push("/")}
-            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-pink-400 dark:hover:text-purple-300"
           >
             Home
           </a>
           <a
             onClick={() => router.push("/about")}
-            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-pink-400 dark:hover:text-purple-300"
           >
             About
           </a>
           <a
             onClick={() => router.push("/project")}
-            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-emerald-400 dark:hover:text-blue-400"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 dark:text-gray-100 hover:text-pink-400 dark:hover:text-purple-300"
           >
             Projects
           </a>

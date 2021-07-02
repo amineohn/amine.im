@@ -4,7 +4,7 @@ import { Main } from "../templates/Main";
 const About = () => (
   <Main meta={<Meta title="Projects" description="My Projects" />}>
     <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-10">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+      <h1 className="mb-4 text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400 md:text-5xl">
         Projects
       </h1>
       <div className="mb-8">

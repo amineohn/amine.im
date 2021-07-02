@@ -3,7 +3,7 @@ import { Main } from "../templates/Main";
 
 const About = () => (
   <Main meta={<Meta title="About" description="About me" />}>
-    <h1 className="pb-2 text-5xl font-bold text-black dark:text-white">
+    <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
       About
     </h1>
     <div className="mb-8">
