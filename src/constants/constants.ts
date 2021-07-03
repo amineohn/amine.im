@@ -1,39 +1,17 @@
 export const Projects = [
   {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
+    name: "Elise Production",
+    link: "https://elise.vercel.app",
+    image: "../images/elise.png",
+    resume:
+      "Elise Production is a app to add weight and after that it send weight by mail or in database. ReactJS, Node.",
   },
   {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
-  },
-  {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
-  },
-  {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
-  },
-  {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
-  },
-  {
-    name: "title project",
-    link: "http://",
-    image: "https://images.unsplash.com/photo-1579546929518-9e396f3cc809",
-    resume: "resume project",
+    name: "Veny.xyz",
+    link: "https://veny.xyz",
+    image: "../images/veny.png",
+    resume:
+      "a simple project with Lanyard TypeScript Tailwind for more practice and experiment with TypeScript.",
   },
 ];
 

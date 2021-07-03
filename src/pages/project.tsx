@@ -40,7 +40,7 @@ const About = () => {
                     </svg>
                   </a>
                 </p>
-                <span className="text-gray-800 text-md dark:text-gray-50">
+                <span className="text-sm text-gray-800 dark:text-gray-50">
                   {project.resume}
                 </span>
               </div>
