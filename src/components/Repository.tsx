@@ -30,7 +30,7 @@ const Repository = ({ repos }: any) => {
               <p className="mt-2 text-sm font-bold text-gray-800 spacing-sm dark:text-white">
                 {repo.description}
               </p>
-              <div className="flex">
+              <div className="flex mt-5">
                 <p>
                   <span className="mb-1 text-sm">
                     {repo.watchers ? (
