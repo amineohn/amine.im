@@ -11,7 +11,7 @@ const About = () => {
         <div className="mb-8">
           <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
             All my first projects were here, it's a pleasure to share them with
-            you. &nbsp;
+            you. 😊&nbsp;
           </p>
         </div>
         <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
