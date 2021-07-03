@@ -96,7 +96,7 @@ export function ThemeSwitcher() {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 stroke="currentColor"
-                className="w-4 h-4 text-gray-800 transition dark:text-gray-200"
+                className="w-4 h-4 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-gray-800"
               >
                 <path
                   strokeLinecap="round"
