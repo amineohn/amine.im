@@ -5,12 +5,16 @@ const Repository = ({ repos }: any) => {
         {repos.map((repo) => {
           return (
             <div className="w-full p-4 overflow-hidden border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
-              <a target="_blank" rel="noopener noreferrer" href={repo.svn_url}>
-                <div
-                  key={repo.id}
-                  className="flex items-center text-gray-900 dark:text-gray-100"
+              <div
+                key={repo.id}
+                className="flex items-center text-gray-900 dark:text-gray-100"
+              >
+                {repo.name}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={repo.svn_url}
                 >
-                  {repo.name}
                   <svg
                     className="w-4 h-4 ml-1"
                     xmlns="http://www.w3.org/2000/svg"
@@ -25,8 +29,8 @@ const Repository = ({ repos }: any) => {
                       d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                     ></path>
                   </svg>
-                </div>
-              </a>
+                </a>
+              </div>
               <p className="mt-2 text-sm font-bold text-gray-800 spacing-sm dark:text-white">
                 {repo.description}
               </p>
