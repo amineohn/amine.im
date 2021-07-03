@@ -69,7 +69,7 @@ const Spotify = () => {
             />
           </svg>
           <div className="inline-flex flex-col w-full max-w-full truncate sm:flex-row">
-            <p className="font-medium text-gray-800 dark:text-gray-200">
+            <p className="font-normal text-gray-800 dark:text-gray-200">
               {doing?.listening_to_spotify ? (
                 <>
                   <FadeIn>

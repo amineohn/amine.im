@@ -34,7 +34,7 @@ const Index = () => {
         Hello, I'm Amine Ouhani
       </h1>
       <div className="mb-8">
-        <p className="mb-4 text-gray-600 dark:text-gray-50">
+        <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui
           quidem non earum eveniet magni voluptates, odio omnis itaque quo dolor
           quibusdam iste quas. Molestias minus officiis et dolores numquam.
@@ -45,7 +45,7 @@ const Index = () => {
           Repository Github
         </h1>
         <div className="mb-8">
-          <p className="mb-4 text-gray-600 dark:text-white">
+          <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
             You can find all my repository from git here.&nbsp;
           </p>
         </div>
@@ -80,7 +80,7 @@ const Index = () => {
                       </svg>
                     </div>
                   </a>
-                  <p className="mt-2 font-bold text-gray-800 text-md spacing-sm dark:text-white">
+                  <p className="mt-2 text-sm font-bold text-gray-800 spacing-sm dark:text-white">
                     {repo.description}
                   </p>
                   <div className="flex">

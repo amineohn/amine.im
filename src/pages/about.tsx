@@ -7,13 +7,13 @@ const About = () => (
       About
     </h1>
     <div className="mb-8">
-      <p className="mb-4 text-gray-600 dark:text-gray-50">
+      <p className="mb-4 text-transparent bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:from-gray-50 dark:via-gray-100 dark:to-white">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
         recusandae quidem. Quaerat molestiae blanditiis doloremque possimus
         labore voluptatibus distinctio recusandae autem esse explicabo molestias
         officia placeat, accusamus aut saepe.
       </p>
-      <p className="dark:text-gray-50">
+      <p className="bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
         recusandae quidem. Quaerat molestiae blanditiis doloremque possimus
         labore voluptatibus distinctio recusandae autem esse explicabo molestias
