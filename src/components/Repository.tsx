@@ -216,9 +216,7 @@ const Repository = ({ repos }: any) => {
                   </span>
                 </p>
                 <p>
-                  <span className="mb-1 text-sm space-x-0.5">
-                    {repo.language}
-                  </span>
+                  <span className="mb-1 ml-1 text-xs">{repo.language}</span>
                 </p>
               </div>
             </div>
