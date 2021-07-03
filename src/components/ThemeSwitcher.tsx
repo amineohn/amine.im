@@ -1,28 +1,28 @@
-import { useTheme } from 'next-themes';
+import { useTheme } from "next-themes";
 
 export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   const getNextTheme = (): string => {
-    if (theme === 'dark') return 'light';
-    if (theme === 'light') return 'system';
-    return 'dark';
+    if (theme === "dark") return "light";
+    if (theme === "light") return "system";
+    return "dark";
   };
 
   return (
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="w-10 h-10 p-3 bg-gray-200 rounded-full dark:bg-gray-800"
+      className="w-10 h-10 p-3 transition bg-gray-200 rounded-full dark:bg-gray-800 hover:bg-pink-400 dark:hover:bg-purple-300 hover:text-white dark:hover:text-gray-800"
       onClick={() => setTheme(getNextTheme())}
     >
-      {theme === 'dark' ? (
+      {theme === "dark" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="currentColor"
-          className="w-4 h-4 text-gray-800 dark:text-gray-200"
+          className="w-4 h-4 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-gray-800"
         >
           <path
             strokeLinecap="round"
@@ -37,7 +37,7 @@ export function ThemeSwitcher() {
           viewBox="0 0 24 24"
           fill="currentColor"
           stroke="currentColor"
-          className="w-4 h-4 text-gray-800 dark:text-gray-200"
+          className="w-4 h-4 text-gray-800 transition dark:text-gray-200"
         >
           <path
             strokeLinecap="round"

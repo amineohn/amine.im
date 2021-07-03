@@ -74,6 +74,7 @@ const Spotify = () => {
                     <a
                       href={`https://open.spotify.com/track/${doing?.spotify.track_id}`}
                       target="_blank"
+                      className="overflow-hidden"
                     >
                       {doing.spotify.song.replace(/\&/g, "and")} by{" "}
                       {doing.spotify.artist
