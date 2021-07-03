@@ -38,7 +38,7 @@ const Index = () => {
         <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui
           quidem non earum eveniet magni voluptates, odio omnis itaque quo dolor
-          quibusdam iste quas. Molestias minus officiis et dolores numquam.
+          quibusdam iste quas. Molestias minus officiis et dolores numquam. 😁
         </p>
       </div>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">
@@ -47,7 +47,7 @@ const Index = () => {
         </h1>
         <div className="mb-8">
           <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
-            You can find all my repository from git here.&nbsp;
+            You can find all my repository from git here. 💯&nbsp;
           </p>
         </div>
         <Repository repos={repos} />
