@@ -15,4 +15,4 @@ export const Projects = [
   },
 ];
 
-export const discordId = "762055588762877973";
+export const discordId = process.env.discordId;

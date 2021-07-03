@@ -8,3 +8,9 @@ module.exports = withBundleAnalyzer({
   basePath: "",
   reactStrictMode: true,
 });
+
+module.exports = {
+  env: {
+    discordId: '762055588762877973',
+  }
+}
