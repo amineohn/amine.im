@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import FadeIn from "react-fade-in";
-
+import { discordId } from "../constants/constants";
 import { Presence } from "../types/Lanyard";
 
 enum Operation {
@@ -21,8 +21,6 @@ type SocketEvent = {
   t?: EventType;
   d: Presence | unknown;
 };
-
-const discordId = "762055588762877973";
 const Spotify = () => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [doing, setDoing] = useState<Presence>();

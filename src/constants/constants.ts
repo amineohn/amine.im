@@ -36,3 +36,5 @@ export const Projects = [
     resume: "resume project",
   },
 ];
+
+export const discordId = "762055588762877973";
