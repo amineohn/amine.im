@@ -1,6 +1,6 @@
 import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
-import { Projects } from "../constants/constants";
+import Projects from "../components/Projects";
 const About = () => {
   return (
     <Main meta={<Meta title="Projects" description="My Projects" />}>
@@ -14,39 +14,7 @@ const About = () => {
             you. 😊&nbsp;
           </p>
         </div>
-        <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
-          {Projects.map((project) => {
-            return (
-              <div className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-900 max-w-72">
-                <div className="flex items-center text-gray-900 dark:text-gray-100">
-                  <img className="rounded-md" src={project.image} />
-                </div>
-                <p className="mt-2 text-xl font-medium text-gray-900 text-normal spacing-sm dark:text-white">
-                  {project.name}
-                  <a href={project.link} target="_blank">
-                    <svg
-                      className="inline w-4 h-4 ml-1"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                      ></path>
-                    </svg>
-                  </a>
-                </p>
-                <span className="text-sm text-gray-800 dark:text-gray-50">
-                  {project.resume}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+        <Projects />
       </div>
     </Main>
   );

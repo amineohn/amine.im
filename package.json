@@ -18,7 +18,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-fade-in": "^2.0.1",
-    "styled-jsx-plugin-postcss": "^4.0.1"
+    "serverless-mysql": "^1.5.4",
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "swr": "^0.5.6"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^11.0.1",

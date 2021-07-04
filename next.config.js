@@ -8,9 +8,15 @@ module.exports = withBundleAnalyzer({
   basePath: "",
   reactStrictMode: true,
 });
-
 module.exports = {
-  env: {
-    discordId: '762055588762877973',
-  }
-}
+  webpack5: false,
+  webpack: (config) => {
+    config.node = {
+      dns: "mock",
+      fs: "empty",
+      path: true,
+      url: false,
+    };
+    return config;
+  },
+};
