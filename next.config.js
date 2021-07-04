@@ -18,5 +18,5 @@ module.exports = {
       url: false,
     };
     return config;
-  },
+  }
 };
