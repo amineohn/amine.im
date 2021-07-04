@@ -37,7 +37,7 @@ const Index = () => {
       <div className="mb-8">
         <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
           You have found my personal part of the Internet. I am a Full-Stack
-          Junior developer, I work at Elise Atlantique. 😁
+          Junior developer. 😁
         </p>
       </div>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">

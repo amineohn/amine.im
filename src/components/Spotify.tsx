@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 
-import FadeIn from "react-fade-in";
 import { discordId } from "../constants/constants";
 import { Presence } from "../types/Lanyard";
+import FadeIn from "react-fade-in";
 
 enum Operation {
   Event,
