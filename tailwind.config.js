@@ -32,6 +32,8 @@ module.exports = {
         coolGray: colors.coolGray,
         blueGray: colors.blueGray,
         js: "#EFD81D",
+        ts: "#2D79C7",
+        tailwind: "#44a8b3"
       },
     },
   },
