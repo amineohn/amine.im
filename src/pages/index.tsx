@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ListSongs from "../components/ListSongs";
 import Repository from "../components/Repository";
 import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
