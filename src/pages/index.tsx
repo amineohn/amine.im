@@ -41,11 +41,11 @@ const Index = () => {
         </p>
       </div>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">
-        <h1 className="mb-6 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+        <h1 className="mb-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
           Repository Github
         </h1>
         <div className="mb-8">
-          <p className="mb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
+          <p className="bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
             You can find all my repository from git here. 💯&nbsp;
           </p>
         </div>
