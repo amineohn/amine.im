@@ -116,7 +116,11 @@ const Activity = (
                     <>
                       <FadeIn>
                         <span className="font-medium text-black dark:text-white">
-                          {currentActivity.name}
+                          {currentActivity.name}{" "}
+                          <img
+                            src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
+                            className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
+                          />
                         </span>
                         {currentActivity.details ? (
                           <span className="text-black dark:text-white">
@@ -139,14 +143,43 @@ const Activity = (
           </>
         ) : (
           <>
-            <div className="flex items-center mt-2 space-x-2 text-gray-700 rounded-md dark:text-gray-300">
-              <div
-                className={`flex-shrink-0 w-3 h-3 bg-red-500 rounded-full`}
-              ></div>
-              <div className="text-sm font-medium leading-tight truncate">
-                no more Activity
-              </div>
-            </div>
+            <span className="font-medium text-black dark:text-white">
+              <svg
+                className="inline w-8 h-8 mb-0.5"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M29.0542 17.2712C35.9711 13.9402 44.0285 13.9402 50.9455 17.2712C57.8624 20.6022 62.8861 26.9018 64.5944 34.3865C66.3028 41.8713 64.5099 49.7266 59.7232 55.7289C54.9365 61.7312 47.677 65.2272 39.9998 65.2272C32.3226 65.2272 25.0631 61.7312 20.2765 55.7289C15.4898 49.7266 13.6968 41.8713 15.4052 34.3865C17.1135 26.9018 22.1372 20.6022 29.0542 17.2712Z"
+                  fill="#F2C94C"
+                />
+                <path
+                  d="M50.6066 50.6066C47.7936 53.4196 43.9782 55 40 55C36.0218 55 32.2064 53.4196 29.3934 50.6066"
+                  stroke="#333333"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M34.9497 37.3431C34.2997 36.6003 33.5281 36.011 32.6788 35.609C31.8295 35.2069 30.9193 35 30 35C29.0807 35 28.1705 35.2069 27.3212 35.609C26.4719 36.011 25.7003 36.6003 25.0503 37.3431"
+                  stroke="#4F4F4F"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M54.9497 37.3431C54.2997 36.6003 53.5281 36.011 52.6788 35.609C51.8295 35.2069 50.9193 35 50 35C49.0807 35 48.1705 35.2069 47.3212 35.609C46.4719 36.011 45.7003 36.6003 45.0503 37.3431"
+                  stroke="#4F4F4F"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </span>
+            <span className="text-sm text-black dark:text-white">
+              I do nothing sorry
+            </span>
           </>
         )}
         <div className="flex items-center mt-2 space-x-2 text-gray-700 rounded-md dark:text-gray-300">
