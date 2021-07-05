@@ -1,10 +1,11 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 
 import { useRouter } from "next/router";
 import FadeIn from "react-fade-in";
 
 import Spotify from "../components/Spotify";
 import { ThemeSwitcher } from "../components/ThemeSwitcher";
+import Activity from "../components/Activity";
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -65,6 +66,7 @@ const Main = (props: IMainProps) => {
           <footer className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-8">
             <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-200" />
             <Spotify />
+            <Activity />
           </footer>
         </FadeIn>
       </main>
