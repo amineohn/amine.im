@@ -61,7 +61,7 @@ const Spotify = () => {
       <FadeIn>
         {doing?.listening_to_spotify ? (
           <>
-            <div className="flex flex-row-reverse w-full mb-3 space-x-0 sm:flex-row sm:space-x-2">
+            <div className="flex flex-row-reverse w-full mb-3 space-x-0 overflow-auto sm:flex-row sm:space-x-2">
               <svg className="w-5 h-4 mt-1 ml-auto" viewBox="0 0 168 168">
                 <path
                   fill="#1ED760"
