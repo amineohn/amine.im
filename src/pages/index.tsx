@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import ListSongs from "../components/ListSongs";
 import Repository from "../components/Repository";
 import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
@@ -40,8 +41,12 @@ const Index = () => {
           Junior developer. 😁
         </p>
       </div>
+      <h1 className="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+        Playlist
+      </h1>
+      <ListSongs />
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">
-        <h1 className="mb-4 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+        <h1 className="mb-6 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
           Repository Github
         </h1>
         <div className="mb-8">
