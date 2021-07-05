@@ -63,7 +63,7 @@ const Activity = (
   );
 
   useEffect(() => {
-    //setActive(currentActivity);
+    setActive(currentActivity);
   }, [currentActivity]);
 
   if (!doing || !doing?.discord_status) return null;
@@ -87,22 +87,17 @@ const Activity = (
       mode = "Offline";
       break;
   }
+  const name = currentActivity?.name?.replace("Code", "Visual Studio Code");
+  const state =
+    currentActivity?.state?.replace("📁 ", "")?.split(" | ")?.[0] ||
+    "a file".replace(`${[0]}.tsx`, `${[0]}`);
   return (
     <>
       <FadeIn>
         {currentActivity ? (
           <>
-            {() => {
-              if (currentActivity.name === "Code") {
-                const replaced =
-                  currentActivity.state
-                    ?.replace("📁 ", "")
-                    ?.split(" | ")?.[0] || "a file";
-                return `Editing ${replaced} in Visual Studio Code`;
-              }
-            }}
             <FadeIn>
-              <div className="flex items-center mt-2 space-x-2 text-gray-700 rounded-md dark:text-gray-300">
+              <div className="flex items-center space-x-2 text-gray-700 rounded-md dark:text-gray-300">
                 {currentActivity.assets ? (
                   <>
                     <img
@@ -116,22 +111,18 @@ const Activity = (
                     <>
                       <FadeIn>
                         <span className="font-medium text-black dark:text-white">
-                          {currentActivity.name}{" "}
+                          {name}{" "}
                           <img
                             src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
                             className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
                           />
                         </span>
                         {currentActivity.details ? (
-                          <span className="text-black dark:text-white">
-                            {currentActivity.details
-                              ?.replace("📁 ", "")
-                              ?.split(" | ")?.[0] || "a file"}
-                          </span>
+                          <span className="text-black dark:text-white"></span>
                         ) : null}
                         {currentActivity.state ? (
                           <span className="text-black dark:text-white">
-                            {currentActivity.state}
+                            {state}
                           </span>
                         ) : null}
                       </FadeIn>
