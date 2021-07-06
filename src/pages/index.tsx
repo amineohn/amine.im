@@ -9,7 +9,7 @@ const Index = () => {
   });
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/imveny/repos`)
+    fetch(`https://api.github.com/users/amineohn/repos`)
       .then((res) => res.json())
       .then((repos) => {
         setRepo({ repos: repos });
