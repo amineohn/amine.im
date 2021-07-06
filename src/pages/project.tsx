@@ -1,7 +1,7 @@
 import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
 import Projects from "../components/Projects";
-const About = () => {
+const Project = () => {
   return (
     <Main meta={<Meta title="Projects" description="My Projects" />}>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-10">
@@ -20,4 +20,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Project;
