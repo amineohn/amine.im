@@ -75,7 +75,6 @@ const Main = (props: IMainProps) => {
           </footer>
         </FadeIn>
       </main>
-      {/* Shotout to ixartz for his Boilerplate link: https://github.com/ixartz/Next-js-Boilerplate */}
     </>
   );
 };
