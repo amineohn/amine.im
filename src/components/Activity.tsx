@@ -69,22 +69,32 @@ const Activity = (
   if (!doing || !doing?.discord_status) return null;
   let Color: string = "747F8D";
   let mode: string = "Online";
+  let background: string = "YEET";
+  let text: string = "yeet2";
   switch (doing.discord_status) {
     case "online":
-      Color = "bg-green-500";
+      Color = "bg-green-300";
       mode = "Online";
+      background = "bg-green-400";
+      text = "text-gray-900";
       break;
     case "idle":
       Color = "bg-orange-500";
       mode = "Idle";
+      background = "bg-orange-400";
+      text = "text-white";
       break;
     case "dnd":
       Color = "bg-red-500";
-      mode = "DnD";
+      mode = "AFK";
+      background = "bg-red-400";
+      text = "text-white";
       break;
     case "offline":
       Color = "bg-gray-500";
       mode = "Offline";
+      background = "bg-gray-400";
+      text = "text-white";
       break;
   }
   const name = currentActivity?.name?.replace("Code", "Visual Studio Code");
@@ -168,7 +178,9 @@ const Activity = (
             </div>
           </>
         )}
-        <div className="flex items-center mt-2 space-x-2 text-gray-700 rounded-md dark:text-gray-300">
+        <div
+          className={`flex items-center mt-2 space-x-2 ${text} rounded-full ${background} py-1 px-1 w-20`}
+        >
           <div className={`flex-shrink-0 w-3 h-3 ${Color} rounded-full`}></div>
           <div
             title={mode}
