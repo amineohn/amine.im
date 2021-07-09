@@ -1,6 +1,5 @@
 import { m } from "framer-motion";
 import { ChangeEvent, FormEvent, useState } from "react";
-import { toast } from "react-toastify";
 
 const Contact = () => {
   const [name, setName] = useState("");
