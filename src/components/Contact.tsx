@@ -22,13 +22,47 @@ const Contact = () => {
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name || !mail || !message)
-      return toast.error("❌ Please fill out the form completely.");
+      return (
+        <div className="py-4 text-center bg-indigo-900 lg:px-4">
+          <div className="flex items-center p-2 leading-none text-indigo-100 bg-indigo-800 lg:rounded-full lg:inline-flex">
+            <span className="flex px-2 py-1 mr-3 text-xs font-bold uppercase bg-indigo-500 rounded-full">
+              Error
+            </span>
+            <span className="flex-auto mr-2 font-semibold text-left">
+              Please fill out the form completely.
+            </span>
+            <svg
+              className="w-4 h-4 opacity-75 fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+            >
+              <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+            </svg>
+          </div>
+        </div>
+      );
     window.open(
       `mailto:amineprojet7@gmail.com?body=${encodeURIComponent(
         `Hey, It's ${name} (${mail})\n\n${message}`
       )}`
     );
-    toast.success("🦄 Thanks for your message!");
+    <div className="py-4 text-center bg-indigo-900 lg:px-4">
+      <div className="flex items-center p-2 leading-none text-indigo-100 bg-indigo-800 lg:rounded-full lg:inline-flex">
+        <span className="flex px-2 py-1 mr-3 text-xs font-bold uppercase bg-indigo-500 rounded-full">
+          Success
+        </span>
+        <span className="flex-auto mr-2 font-semibold text-left">
+          Thanks for your message!
+        </span>
+        <svg
+          className="w-4 h-4 opacity-75 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+        >
+          <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" />
+        </svg>
+      </div>
+    </div>;
   };
 
   return (
