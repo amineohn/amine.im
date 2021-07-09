@@ -179,7 +179,7 @@ const Activity = (
           </>
         )}
         <div
-          className={`flex items-center mt-2 space-x-2 ${text} rounded-full ${background} py-1 px-1 w-20`}
+          className={`flex items-center mt-4 space-x-2 ${text} rounded-full ${background} py-1 px-1 w-20`}
         >
           <div className={`flex-shrink-0 w-3 h-3 ${Color} rounded-full`}></div>
           <div
