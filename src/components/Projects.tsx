@@ -10,7 +10,7 @@ export default function Projects() {
       </div>
     );
   return (
-    <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
+    <div className="grid w-full grid-cols-1 gap-4 my-2 subpixel-antialiased sm:grid-cols-2">
       {projects.map((project) => {
         return (
           <FadeIn>

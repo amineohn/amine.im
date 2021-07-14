@@ -21,19 +21,19 @@ const Main = (props: IMainProps) => {
         <div>
           <a
             onClick={() => router.push("/")}
-            className="p-1 font-medium text-gray-900 transition hover:bg-opacity-50 dark:hover:bg-opacity-50 cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400 hover:bg-pink-400 dark:hover:bg-purple-300"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400"
           >
             Home
           </a>
           <a
             onClick={() => router.push("/about")}
-            className="p-1 font-medium text-gray-900 transition hover:bg-opacity-50 dark:hover:bg-opacity-50 cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400 hover:bg-pink-400 dark:hover:bg-purple-300"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400"
           >
             About
           </a>
           <a
             onClick={() => router.push("/project")}
-            className="p-1 font-medium text-gray-900 transition hover:bg-opacity-50 dark:hover:bg-opacity-50 cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400 hover:bg-pink-400 dark:hover:bg-purple-300"
+            className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-pink-500 dark:hover:text-purple-400"
           >
             Projects
           </a>
