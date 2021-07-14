@@ -88,7 +88,8 @@ const Spotify = () => {
                   <span className="text-black dark:text-white">
                     {doing.spotify.artist
                       .replace(/\;/g, ",")
-                      .replace(/\&/g, "and")}
+                      .replace(/\&/g, "and")}{" "}
+                    <span className="absolute inline w-2 h-2 mt-1.5 ml-2 bg-red-500 rounded-full animate-pulse" />
                   </span>
                   <div className="inline-flex flex-col w-full max-w-full truncate sm:flex-row">
                     <p className="font-normal text-gray-800 text-md dark:text-gray-200">
@@ -114,14 +115,6 @@ const Spotify = () => {
                           </FadeIn>
                         </>
                       ) : null}
-                    </p>
-                    <span className="hidden mx-2 text-gray-700 dark:text-gray-300 sm:block">
-                      {" "}
-                      –{" "}
-                    </span>
-                    <p className="text-gray-500 truncate dark:text-gray-50 max-w-max">
-                      Spotify
-                      <span className="absolute inline w-2 h-2 mt-1.5 ml-1 space-x-2 bg-red-500 rounded-full animate-pulse" />
                     </p>
                   </div>
                 </FadeIn>
