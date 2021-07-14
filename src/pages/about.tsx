@@ -3,7 +3,7 @@ import { Main } from "../templates/Main";
 import Contact from "../components/Contact";
 const About = () => (
   <Main meta={<Meta title="About" description="About me" />}>
-    <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+    <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-conic-b from-yellow-500 via-purple-500 to-blue-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
       About Me
     </h1>
     <div className="mb-8">
@@ -12,7 +12,7 @@ const About = () => (
         Digital Campus Bordeaux in 2020 for the profession of Junior Full-Stack
         Developer. I am a Full-Stack Junior developer.
       </p>
-      <h1 className="pb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+      <h1 className="pb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-conic-b from-yellow-500 via-purple-500 to-blue-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
         # What technology i use?
       </h1>
       <p className="pb-4 bg-clip-text bg-gradient-to-tl from-gray-700 via-gray-900 to-black dark:bg-gradient-to-tl dark:from-gray-50 dark:via-gray-100 dark:to-white">
@@ -112,7 +112,7 @@ const About = () => (
         </span>{" "}
         🔥
       </p>
-      <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-tl from-pink-500 via-red-500 to-yellow-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
+      <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-conic-b from-yellow-500 via-purple-500 to-blue-500 dark:bg-gradient-to-tl dark:from-indigo-300 dark:to-purple-400">
         Contact
       </h1>
       <Contact />
