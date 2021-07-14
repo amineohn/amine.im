@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { discordId } from "../constants/constants";
+import Progress from "../components/Progress";
 import { Presence } from "../types/Lanyard";
 import FadeIn from "react-fade-in";
 
@@ -56,13 +57,15 @@ const Spotify = () => {
   }, [socket]);
 
   if (!doing || !doing?.discord_status) return null;
+
+  const currentDate: any = new Date();
   return (
     <>
       <FadeIn>
         {doing?.listening_to_spotify ? (
           <>
             <div className="flex flex-row-reverse w-full mb-3 space-x-2 overflow-auto sm:flex-row sm:space-x-2"></div>
-            <div className="flex flex-col pb-5 space-y-4 text-gray-700 rounded-md dark:text-gray-300">
+            <div className="flex pb-5 space-x-4 -space-y-1 text-gray-700 rounded-md dark:text-gray-300">
               <img
                 className="flex-shrink-0 w-12 h-12 rounded-md bg-gray-50 dark:bg-gray-800"
                 src={doing.spotify.album_art_url}
@@ -99,17 +102,26 @@ const Spotify = () => {
                             >
                               {doing.spotify.song.replace(/\&/g, "and")}
                             </a>
+                            <Progress
+                              percentage={
+                                (100 *
+                                  (currentDate -
+                                    doing.spotify.timestamps.start)) /
+                                (doing.spotify.timestamps.end -
+                                  doing.spotify.timestamps.start)
+                              }
+                            />
                           </FadeIn>
                         </>
                       ) : null}
                     </p>
-                    <span className="hidden mx-2 text-gray-500 dark:text-gray-300 sm:block">
+                    <span className="hidden mx-2 text-gray-700 dark:text-gray-300 sm:block">
                       {" "}
                       –{" "}
                     </span>
                     <p className="text-gray-500 truncate dark:text-gray-50 max-w-max">
                       Spotify
-                      <span className="absolute inline w-2 h-2 mt-1.5 ml-1 space-x-1 bg-red-500 rounded-full animate-pulse" />
+                      <span className="absolute inline w-2 h-2 mt-1.5 ml-1 space-x-2 bg-red-500 rounded-full animate-pulse" />
                     </p>
                   </div>
                 </FadeIn>
