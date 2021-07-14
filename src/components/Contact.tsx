@@ -73,7 +73,7 @@ const Contact = () => {
             <div className="w-1/2 px-2">
               <input
                 onChange={onMailChange}
-                className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-purple-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
+                className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-rose-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
                 type="email"
                 placeholder="Email"
               />
@@ -81,7 +81,7 @@ const Contact = () => {
             <div className="w-1/2 px-2">
               <input
                 onChange={onNameChange}
-                className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-purple-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
+                className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-rose-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
                 type="text"
                 placeholder="Name"
               />
@@ -90,7 +90,7 @@ const Contact = () => {
           <div className="mb-4">
             <textarea
               onChange={onMessageChange}
-              className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-purple-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
+              className="block w-full px-4 py-3 leading-tight text-gray-700 transition duration-200 border border-gray-200 rounded appearance-none dark:text-white focus:bg-white focus:border-blue-500 dark:focus:border-rose-400 focus:outline-none dark:bg-black dark:focus:bg-black dark:placeholder-white"
               placeholder="Write something..."
               rows={5}
             ></textarea>
@@ -104,7 +104,7 @@ const Contact = () => {
               whileTap={{
                 scale: 0.98,
               }}
-              className="inline-block px-5 py-2 m-0 font-semibold leading-none text-gray-800 transition border-2 border-blue-400 rounded-md shadow hover:text-white dark:text-white hover:bg-blue-500 dark:border-purple-400 dark:hover:bg-purple-500"
+              className="inline-block px-5 py-2 m-0 font-semibold leading-none text-gray-800 transition border-2 border-blue-400 rounded-md shadow hover:text-white dark:text-white hover:bg-blue-500 dark:border-rose-400 dark:hover:bg-rose-500"
             >
               <span className="my-2 mr-1">
                 <svg

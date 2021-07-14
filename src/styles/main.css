@@ -9,7 +9,7 @@ body {
 }
 
 .loader {
-  @apply border-t-blue-500 dark:border-t-indigo-300;
+  @apply border-t-blue-500 dark:border-t-rose-500;
   -webkit-animation: spinner 1.5s linear infinite;
   animation: spinner 1.5s linear infinite;
 }
