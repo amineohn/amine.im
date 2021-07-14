@@ -123,7 +123,7 @@ const Spotify = () => {
           </>
         ) : (
           <>
-            <div className="flex flex-col pb-5 space-y-4 text-gray-700 rounded-md dark:text-gray-300">
+            <div className="flex pb-5 space-x-2 space-y-1 text-gray-700 rounded-md dark:text-gray-300">
               <div className="flex-shrink-0 w-12 h-12 rounded-md bg-gray-50 dark:bg-gray-800">
                 <svg
                   className="flex justify-center w-8 h-8 my-2 ml-2"
