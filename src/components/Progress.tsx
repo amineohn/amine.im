@@ -15,7 +15,7 @@ const Progress = ({ percentage }: { percentage: number }) => {
 };
 
 const Container = styled.div`
-  width: 100%;
+  width: 30vh;
   height: 7.5px;
   overflow: hidden;
   border-radius: 5px;
