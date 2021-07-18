@@ -25,7 +25,7 @@ export function ThemeSwitcher() {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 stroke="currentColor"
-                className="w-4 h-4 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-gray-800"
+                className="w-4 h-4"
               >
                 <path
                   strokeLinecap="round"
@@ -38,7 +38,7 @@ export function ThemeSwitcher() {
           case "system":
             return (
               <svg
-                className="w-4 h-4 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-gray-800"
+                className="w-4 h-4"
                 viewBox="0 0 80 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,7 @@ export function ThemeSwitcher() {
                 viewBox="0 0 24 24"
                 fill="currentColor"
                 stroke="currentColor"
-                className="w-4 h-4 text-gray-800 dark:text-gray-200 hover:text-white dark:hover:text-gray-800"
+                className="w-4 h-4"
               >
                 <path
                   strokeLinecap="round"

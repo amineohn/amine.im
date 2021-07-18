@@ -33,7 +33,7 @@ const Index = () => {
       <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-conic-b from-yellow-500 via-purple-500 to-blue-500 dark:bg-gradient-conic-b dark:from-rose-900 dark:via-amber-800 dark:to-rose-400">
         <img
           src="../images/me.jpg"
-          className="inline w-20 h-20 mb-1 mr-5 rounded-full"
+          className="inline w-20 h-20 mb-1 mr-5 transition transform rounded-full hover:scale-150"
         />
         Hello, I'm Amine Ouhani
       </h1>

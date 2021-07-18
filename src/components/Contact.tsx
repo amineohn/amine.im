@@ -104,7 +104,7 @@ const Contact = () => {
               whileTap={{
                 scale: 0.98,
               }}
-              className="inline-block px-5 py-2 m-0 font-semibold leading-none text-gray-800 transition border-2 border-blue-400 rounded-md shadow hover:text-white dark:text-white hover:bg-blue-500 dark:border-rose-400 dark:hover:bg-rose-500"
+              className="inline-block px-5 py-2 m-0 font-semibold leading-none text-gray-800 transition transform border border-black rounded-md dark:border-white hover:scale-110 hover:transition hover:border-2 dark:text-white"
             >
               <span className="my-2 mr-1">
                 <svg
@@ -126,7 +126,7 @@ const Contact = () => {
                     fill="currentColor"
                   />
                 </svg>
-                Submit
+                Send
               </span>
             </m.button>
           </div>
