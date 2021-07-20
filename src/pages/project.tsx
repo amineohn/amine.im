@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <Main meta={<Meta title="Projects" description="My Projects" />}>
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-10">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-conic-b from-yellow-500 via-purple-500 to-blue-500 dark:bg-gradient-conic-b dark:from-rose-900 dark:via-amber-800 dark:to-rose-400 md:text-5xl">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-red-500 dark:to-red-900 md:text-5xl">
           Projects
         </h1>
         <div className="mb-8">
