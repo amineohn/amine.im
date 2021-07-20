@@ -33,7 +33,9 @@ module.exports = {
         blueGray: colors.blueGray,
         js: "#EFD81D",
         ts: "#2D79C7",
-        tailwind: "#44a8b3"
+        tailwind: "#44a8b3",
+        nightBlue: "#4a53a0",
+        turquoise: "#3ab4be"
       },
       backgroundImage: {
         'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
