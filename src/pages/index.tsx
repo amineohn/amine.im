@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Profile from "../components/Profile";
 import Repository from "../components/Repository";
 import { Meta } from "../layout/Meta";
 import { Main } from "../templates/Main";
@@ -31,10 +32,7 @@ const Index = () => {
       }
     >
       <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-red-500 dark:to-red-900">
-        <img
-          src="../images/me.jpg"
-          className="inline w-20 h-20 mb-1 mr-5 transition transform rounded-full hover:scale-150"
-        />
+        <Profile />
         Hello, I'm Amine Ouhani
       </h1>
       <div className="mb-8">
