@@ -96,39 +96,37 @@ const Activity = (
       <FadeIn>
         {currentActivity ? (
           <>
-            <FadeIn>
-              <div className="flex items-center space-x-2 text-gray-700 rounded-md dark:text-gray-300">
-                {currentActivity.assets ? (
+            <FadeIn className="flex items-center space-x-2 text-gray-700 rounded-md dark:text-gray-300">
+              {currentActivity.assets ? (
+                <>
+                  <img
+                    src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.large_image}.png`}
+                    className="flex-shrink-0 w-12 h-12 rounded-md"
+                  />
+                </>
+              ) : null}
+              <div className="text-sm leading-tight truncate">
+                {currentActivity ? (
                   <>
-                    <img
-                      src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.large_image}.png`}
-                      className="flex-shrink-0 w-12 h-12 rounded-md"
-                    />
+                    <FadeIn>
+                      <span className="font-medium text-black dark:text-white">
+                        {name}{" "}
+                        <img
+                          src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
+                          className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
+                        />
+                      </span>
+                      {currentActivity.details ? (
+                        <span className="text-black dark:text-white"></span>
+                      ) : null}
+                      {currentActivity.state ? (
+                        <span className="text-black dark:text-white">
+                          {state}
+                        </span>
+                      ) : null}
+                    </FadeIn>
                   </>
                 ) : null}
-                <div className="text-sm leading-tight truncate">
-                  {currentActivity ? (
-                    <>
-                      <FadeIn>
-                        <span className="font-medium text-black dark:text-white">
-                          {name}{" "}
-                          <img
-                            src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
-                            className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
-                          />
-                        </span>
-                        {currentActivity.details ? (
-                          <span className="text-black dark:text-white"></span>
-                        ) : null}
-                        {currentActivity.state ? (
-                          <span className="text-black dark:text-white">
-                            {state}
-                          </span>
-                        ) : null}
-                      </FadeIn>
-                    </>
-                  ) : null}
-                </div>
               </div>
             </FadeIn>
           </>

@@ -2,6 +2,7 @@ import NextLink from "next/link";
 import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { motion, AnimatePresence } from "framer-motion";
+import FadeIn from "react-fade-in";
 
 export const Dropdown = () => {
   const [active, setActive] = useState(false);
@@ -48,7 +49,7 @@ export const Dropdown = () => {
       <AnimatePresence>
         {active && (
           <>
-            <div className="flex justify-end -mr-5">
+            <FadeIn className="flex justify-end mr-28 ">
               <motion.div
                 initial={{ opacity: 0, scale: 0.4 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -133,7 +134,7 @@ export const Dropdown = () => {
                   </a>
                 </div>
               </motion.div>
-            </div>
+            </FadeIn>
           </>
         )}
       </AnimatePresence>
