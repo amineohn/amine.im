@@ -49,7 +49,7 @@ export const Dropdown = () => {
       <AnimatePresence>
         {active && (
           <>
-            <FadeIn className="flex justify-end mr-28 ">
+            <FadeIn className="flex justify-end mr-28">
               <motion.div
                 initial={{ opacity: 0, scale: 0.4 }}
                 animate={{ opacity: 1, scale: 1 }}
