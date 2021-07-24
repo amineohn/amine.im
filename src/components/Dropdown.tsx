@@ -15,7 +15,7 @@ export const Dropdown = () => {
       <button
         onClick={() => toggleActive()}
         aria-label="Dropdown"
-        className="p-1 font-medium transition duration-300 ease-in-out cursor-pointer focus:outline-none text-turquoise dark:text-red-500"
+        className="p-1 font-medium transition duration-300 ease-in-out cursor-pointer focus:outline-none text-turquoise dark:text-red-700"
       >
         {active ? (
           <svg
