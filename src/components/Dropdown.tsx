@@ -3,27 +3,6 @@ import { useState, useRef } from "react";
 import { useClickAway } from "react-use";
 import { motion, AnimatePresence } from "framer-motion";
 
-export const DropLink = ({
-  page,
-  href,
-  setActive,
-}: {
-  page: string;
-  href: string;
-  setActive: (active: boolean) => void;
-}) => {
-  return (
-    <NextLink href={href}>
-      <a
-        onClick={() => setActive(false)}
-        className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-red-500"
-      >
-        {page}
-      </a>
-    </NextLink>
-  );
-};
-
 export const Dropdown = () => {
   const [active, setActive] = useState(false);
   const ref = useRef(null);
