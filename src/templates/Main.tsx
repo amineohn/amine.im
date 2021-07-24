@@ -6,6 +6,7 @@ import FadeIn from "react-fade-in";
 import Spotify from "../components/Spotify";
 import { ThemeSwitcher } from "../components/ThemeSwitcher";
 import Activity from "../components/Activity";
+import { Dropdown } from "../components/Dropdown";
 type IMainProps = {
   meta: ReactNode;
   children: ReactNode;
@@ -37,6 +38,7 @@ const Main = (props: IMainProps) => {
           >
             Projects
           </a>
+          <Dropdown />
         </div>
       </div>
       <main className="flex flex-col justify-center px-8">
