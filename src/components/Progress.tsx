@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const Progress = ({ percentage }: { percentage: number }) => {
   return (
-    <Container className="border border-nightBlue dark:border-red-500">
+    <Container className="transition border border-black dark:border-white hover:border-turquoise dark:hover:border-red-700">
       <ProgressFill
-        className="bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-red-500 dark:to-red-900"
+        className="transition bg-black dark:bg-white hover:bg-turquoise dark:hover:bg-red-700"
         initial={false}
         transition={{ ease: "easeOut", duration: 2 }}
         animate={{ x: `${percentage - 100}%` }}
