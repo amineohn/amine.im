@@ -5,7 +5,7 @@ const Repository = ({ repos }: any) => {
       <div className="grid w-full grid-cols-1 gap-4 my-2 sm:grid-cols-2">
         {repos.map((repo) => {
           return (
-            <div className="w-full p-4 overflow-hidden transition transform border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72 hover:scale-110 hover:border-nightBlue dark:hover:border-red-500">
+            <div className="w-full p-4 overflow-hidden transition transform border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72 hover:scale-110 hover:border-nightBlue dark:hover:border-indigo-400">
               <div
                 key={repo.id}
                 className="flex items-center text-gray-900 dark:text-gray-100"
