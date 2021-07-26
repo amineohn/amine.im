@@ -13,7 +13,7 @@ export function ThemeSwitcher() {
     <button
       aria-label="Toggle Dark Mode"
       type="button"
-      className="w-10 h-10 p-3 transition bg-gray-200 rounded-full dark:bg-gray-800 hover:bg-nightBlue dark:hover:bg-indigo-300 hover:text-white dark:hover:text-gray-800"
+      className="w-10 h-10 p-3 transition bg-gray-200 rounded-full dark:bg-gray-900 hover:bg-nightBlue dark:hover:bg-indigo-300 hover:text-white dark:hover:text-gray-800"
       onClick={() => setTheme(getNextTheme())}
     >
       {(() => {

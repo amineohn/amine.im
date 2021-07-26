@@ -166,17 +166,19 @@ const Activity = (
             </div>
           </>
         )}
-        <div
-          className={`flex items-center mt-4 space-x-2 text-black dark:text-white rounded-full py-1 px-1 w-20`}
-        >
+        <div className="flex">
           <div
-            className={`flex-shrink-0 w-3 h-3 ${Color} rounded-full mt-0.5 animate-bounce`}
-          ></div>
-          <div
-            title={mode}
-            className="text-sm font-normal leading-tight truncate"
+            className={`flex items-center mt-4 space-x-2 text-black dark:text-white rounded-full py-1 px-1 w-20`}
           >
-            {mode}
+            <div
+              className={`flex-shrink-0 w-3 h-3 ${Color} rounded-full mt-0.5 animate-bounce`}
+            ></div>
+            <div
+              title={mode}
+              className="text-sm font-normal leading-tight truncate"
+            >
+              {mode}
+            </div>
           </div>
         </div>
       </FadeIn>
