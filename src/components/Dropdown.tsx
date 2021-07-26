@@ -56,7 +56,7 @@ export const Dropdown = () => {
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.2 }}
                 onMouseLeave={() => setActive(false)}
-                className="absolute grid flex-col items-end gap-3 py-3 pl-4 pr-12 ml-5 text-xs font-normal bg-white border rounded border-turquoise dark:border-indigo-400 dark:bg-gray-800"
+                className="absolute grid flex-col items-end gap-3 py-3 pl-4 pr-12 ml-5 text-xs font-normal bg-white border rounded border-turquoise dark:border-indigo-400 dark:bg-black"
               >
                 <NextLink href="#">
                   <a
