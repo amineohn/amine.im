@@ -22,13 +22,15 @@ const Main = (props: IMainProps) => {
 
         <footer className="flex flex-col items-start justify-center w-full max-w-2xl mx-auto mb-8">
           <hr className="w-full mb-8 border-gray-200 border-1 dark:border-gray-200" />
-          <div className="flex w-full overflow-hidden">
-            <Spotify />
+          <div className="sticky bottom-0">
+            <div className="flex w-full overflow-hidden">
+              <Spotify />
+            </div>
+            <Activity
+              setActive={setPresenceActive}
+              style={{ display: presenceActive ? "block" : "none" }}
+            />
           </div>
-          <Activity
-            setActive={setPresenceActive}
-            style={{ display: presenceActive ? "block" : "none" }}
-          />
         </footer>
       </FadeIn>
     </>

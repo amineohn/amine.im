@@ -1,8 +1,15 @@
-import useSWR from "swr";
+//import useSWR from "swr";
 import FadeIn from "react-fade-in";
 export default function Projects() {
-  const { data } = useSWR("/api/projects");
-  const projects = data;
+  // const { data } = useSWR("/api/projects");
+  const projects = [
+    {
+      image: "./images/elise.png",
+      name: "Elise Production",
+      link: "https://github.com/amineohn/elise-app",
+      resume: "Elise Production is an app able to add weight and manage ect.",
+    },
+  ];
   if (!projects)
     return (
       <div className="fixed top-0 bottom-0 left-0 right-0 z-50 flex flex-col items-center justify-center w-full h-screen overflow-hidden transition-all bg-white opacity-90 dark:bg-black">
@@ -13,7 +20,7 @@ export default function Projects() {
     <div className="grid w-full grid-cols-1 gap-4 my-2 subpixel-antialiased sm:grid-cols-2">
       {projects.map((project) => {
         return (
-          <FadeIn className="w-full p-4 border border-gray-200 rounded metric-card dark:border-gray-800 max-w-72">
+          <FadeIn className="w-full p-4 border border-gray-200 rounded-md dark:border-gray-800 max-w-72">
             <div className="flex items-center text-gray-900 dark:text-gray-100">
               <img className="rounded-md" src={project.image} />
             </div>

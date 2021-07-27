@@ -65,9 +65,9 @@ const Spotify = () => {
         {doing?.listening_to_spotify ? (
           <>
             <div className="flex flex-row-reverse w-full mb-3 space-x-2 overflow-auto sm:flex-row sm:space-x-2"></div>
-            <div className="flex pb-5 space-x-4 -space-y-1 text-gray-700 rounded-md dark:text-gray-300">
+            <div className="flex pb-5 space-x-4 -space-y-0.5 text-gray-700 rounded-md dark:text-gray-300">
               <img
-                className="flex-shrink-0 w-12 h-12 rounded-md bg-gray-50 dark:bg-gray-800"
+                className="flex-shrink-0 w-16 h-16 rounded-md bg-gray-50 dark:bg-gray-900"
                 src={doing.spotify.album_art_url}
               />
               <div className="text-sm leading-tight truncate">
@@ -89,7 +89,6 @@ const Spotify = () => {
                     {doing.spotify.artist
                       .replace(/\;/g, ",")
                       .replace(/\&/g, "and")}{" "}
-                    <span className="absolute inline w-2 h-2 mt-1.5 ml-2 bg-red-500 rounded-full animate-pulse" />
                   </span>
                   <div className="inline-flex flex-col w-full max-w-full truncate sm:flex-row">
                     <p className="font-normal text-gray-800 text-md dark:text-gray-200">
@@ -124,7 +123,7 @@ const Spotify = () => {
         ) : (
           <>
             <div className="flex pb-5 space-x-2 space-y-1 text-gray-700 rounded-md dark:text-gray-300">
-              <div className="flex-shrink-0 w-12 h-12 rounded-md bg-gray-50 dark:bg-gray-800">
+              <div className="flex-shrink-0 w-12 h-12 rounded-md bg-gray-50 dark:bg-gray-900">
                 <svg
                   className="flex justify-center w-8 h-8 my-2 ml-2"
                   viewBox="0 0 168 168"
@@ -137,7 +136,7 @@ const Spotify = () => {
                   />
                 </svg>
               </div>
-              <div className="text-sm leading-tight truncate">
+              <div className="space-x-4 text-sm leading-tight truncate">
                 <FadeIn>
                   <span className="font-medium text-black dark:text-white">
                     Not Playing

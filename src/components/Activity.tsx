@@ -101,7 +101,7 @@ const Activity = (
                 <>
                   <img
                     src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.large_image}.png`}
-                    className="flex-shrink-0 w-12 h-12 rounded-md"
+                    className="flex-shrink-0 w-16 h-16 rounded-md"
                   />
                 </>
               ) : null}
