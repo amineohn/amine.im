@@ -96,7 +96,7 @@ const Activity = (
       <FadeIn>
         {currentActivity ? (
           <>
-            <FadeIn className="flex items-center space-x-2 text-gray-700 rounded-md dark:text-gray-300">
+            <FadeIn className="flex items-center space-x-4 text-gray-700 rounded-md dark:text-gray-300">
               {currentActivity.assets ? (
                 <>
                   <img
@@ -108,14 +108,16 @@ const Activity = (
               <div className="text-sm leading-tight truncate">
                 {currentActivity ? (
                   <>
-                    <FadeIn>
-                      <span className="font-medium text-black dark:text-white">
-                        {name}{" "}
+                    <FadeIn className="space-y-2">
+                      <div className="flex justify-between">
+                        <span className="font-black text-black dark:text-white">
+                          {name}{" "}
+                        </span>
                         <img
                           src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
                           className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
                         />
-                      </span>
+                      </div>
                       {currentActivity.details ? (
                         <span className="text-black dark:text-white"></span>
                       ) : null}
