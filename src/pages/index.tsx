@@ -54,8 +54,8 @@ const Index = () => {
                 fill="#F2C94C"
               />
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M48 45.4331C45.3872 45.8068 42.7162 46.0002 40 46.0002C37.2838 46.0002 34.6128 45.8068 32 45.4331V54.0002C32 58.4185 35.5817 62.0002 40 62.0002C44.4183 62.0002 48 58.4185 48 54.0002V45.4331Z"
                 fill="#EB5757"
               />

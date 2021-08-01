@@ -5,6 +5,10 @@ module.exports = {
   purge: ["./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
+    linearBorderGradients: theme => ({
+      colors: theme('colors'),
+      background: theme('colors'),
+    }),
     extend: {
       colors: {
         transparent: "transparent",
@@ -104,5 +108,6 @@ module.exports = {
 
       addUtilities(individualBorderColors);
     }),
+    require('tailwindcss-border-gradient-radius')
   ],
 };
