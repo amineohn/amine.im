@@ -21,10 +21,9 @@ type SocketEvent = {
   t?: EventType;
   d: Presence | unknown;
 };
-const Activity = (
-  { setActive, ...props }: { setActive: (active: boolean) => void } & any,
-  ref: any
-) => {
+const Activity = ({
+  setActive,
+}: { setActive: (active: boolean) => void } & any) => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [doing, setDoing] = useState<Presence>();
   const send = (op: Operation, d?: unknown): void => {
@@ -88,7 +87,7 @@ const Activity = (
       break;
   }
   const name = currentActivity?.name?.replace("Code", "Visual Studio Code");
-  const state =
+  const replaced =
     currentActivity?.state?.replace("📁 ", "")?.split(" | ")?.[0] ||
     "a file".replace(`${[0]}.tsx`, `${[0]}`);
   return (
@@ -108,7 +107,7 @@ const Activity = (
               <div className="text-sm leading-tight truncate">
                 {currentActivity ? (
                   <>
-                    <FadeIn className="space-y-2">
+                    <FadeIn className="mt-2 space-y-2">
                       <div className="flex justify-between">
                         <span className="font-black text-black dark:text-white">
                           {name}{" "}
@@ -118,14 +117,14 @@ const Activity = (
                           className="bottom-0 right-0 inline w-4 h-4 mb-0.5 rounded-full"
                         />
                       </div>
-                      {currentActivity.details ? (
-                        <span className="text-black dark:text-white"></span>
-                      ) : null}
                       {currentActivity.state ? (
                         <span className="text-black dark:text-white">
-                          {state}
+                          {replaced}
                         </span>
                       ) : null}
+                      <button className="items-center justify-center pt-1 pb-1 pl-2 pr-2 ml-8 font-semibold text-white bg-indigo-400 rounded-md dark:bg-indigo-400">
+                        View Repository
+                      </button>
                     </FadeIn>
                   </>
                 ) : null}
