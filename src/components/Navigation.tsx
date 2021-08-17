@@ -9,19 +9,19 @@ const Navigation = () => {
       <div>
         <a
           onClick={() => router.push("/")}
-          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-turquoise dark:hover:text-indigo-300"
+          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-indigo-400 dark:hover:text-indigo-300"
         >
           Home
         </a>
         <a
           onClick={() => router.push("/about")}
-          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-turquoise dark:hover:text-indigo-300"
+          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-indigo-400 dark:hover:text-indigo-300"
         >
           About
         </a>
         <a
           onClick={() => router.push("/project")}
-          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-turquoise dark:hover:text-indigo-300"
+          className="p-1 font-medium text-gray-900 transition cursor-pointer sm:p-4 sm:pb-1.5 sm:pt-1.5 rounded-full dark:text-gray-100 hover:text-indigo-400 dark:hover:text-indigo-300"
         >
           Projects
         </a>

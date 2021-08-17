@@ -33,7 +33,7 @@ const Index = () => {
       }
     >
       <FadeIn>
-        <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-indigo-200 dark:to-indigo-400">
+        <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
           <Profile />
           Hello, I'm Amine Ouhani
         </h1>
@@ -101,7 +101,7 @@ const Index = () => {
       </div>
       <FadeIn>
         <div className="flex flex-col items-start justify-center max-w-2xl mx-auto">
-          <h1 className="mb-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-indigo-200 dark:to-indigo-400">
+          <h1 className="mb-3 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
             Repository Github
           </h1>
           <div className="mb-8">

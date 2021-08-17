@@ -15,7 +15,7 @@ export const Dropdown = () => {
       <button
         onClick={() => toggleActive()}
         aria-label="Dropdown"
-        className="p-1 font-medium transition duration-300 ease-in-out cursor-pointer focus:outline-none text-turquoise dark:text-indigo-300"
+        className="p-1 font-medium transition duration-300 ease-in-out cursor-pointer focus:outline-none text-indigo-400 dark:text-indigo-300"
       >
         {active ? (
           <svg
@@ -56,12 +56,12 @@ export const Dropdown = () => {
                 exit={{ opacity: 0, scale: 0.5 }}
                 transition={{ duration: 0.2 }}
                 onMouseLeave={() => setActive(false)}
-                className="absolute grid flex-col items-end gap-3 py-3 pl-4 pr-12 ml-5 text-xs font-normal bg-white border rounded border-turquoise dark:border-indigo-400 dark:bg-black"
+                className="absolute grid flex-col items-end gap-3 py-3 pl-4 pr-12 ml-5 text-xs font-normal bg-white border rounded border-indigo-400 dark:border-indigo-400 dark:bg-black"
               >
                 <NextLink href="#">
                   <a
                     onClick={() => setActive(false)}
-                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-indigo-300"
+                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     Setup
                   </a>
@@ -69,7 +69,7 @@ export const Dropdown = () => {
                 <NextLink href="#">
                   <a
                     onClick={() => setActive(false)}
-                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-indigo-300"
+                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     Discord
                   </a>
@@ -79,7 +79,7 @@ export const Dropdown = () => {
                     onClick={() => setActive(false)}
                     href="https://www.instagram.com/amineohn/"
                     target="_blank"
-                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-indigo-300"
+                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     <svg
                       viewBox="0 0 80 80"
@@ -104,7 +104,7 @@ export const Dropdown = () => {
                     onClick={() => setActive(false)}
                     href="https://www.linkedin.com/in/amine-ouhani-41b362176/"
                     target="_blank"
-                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-indigo-300"
+                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     <svg
                       viewBox="0 0 80 80"
@@ -121,7 +121,7 @@ export const Dropdown = () => {
                     onClick={() => setActive(false)}
                     href="https://twitter.com/fuckthisimoutd"
                     target="_blank"
-                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-turquoise dark:hover:text-indigo-300"
+                    className="flex flex-row items-center transition duration-300 ease-in-out focus:outline-none hover:text-indigo-400 dark:hover:text-indigo-300"
                   >
                     <svg
                       className="w-3 h-3 fill-current"

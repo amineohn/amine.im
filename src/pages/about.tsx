@@ -5,7 +5,7 @@ import FadeIn from "react-fade-in";
 const About = () => (
   <Main meta={<Meta title="About" description="About me" />}>
     <FadeIn>
-      <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-indigo-200 dark:to-indigo-400">
+      <h1 className="pb-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
         About Me
       </h1>
     </FadeIn>
@@ -18,7 +18,7 @@ const About = () => (
         </p>
       </FadeIn>
       <FadeIn>
-        <h1 className="pb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-indigo-200 dark:to-indigo-400">
+        <h1 className="pb-2 text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
           # What technology i use?
         </h1>
       </FadeIn>
@@ -134,7 +134,7 @@ const About = () => (
         </p>
       </FadeIn>
       <FadeIn>
-        <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-nightBlue to-turquoise dark:bg-gradient-to-r dark:from-indigo-200 dark:to-indigo-400">
+        <h1 className="pb-4 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-t from-coolGray-900 to-warmGray-600 dark:bg-gradient-to-t dark:from-indigo-200 dark:to-indigo-400">
           Contact
         </h1>
         <Contact />
